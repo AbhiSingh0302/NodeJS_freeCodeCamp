@@ -1,1 +1,1 @@
-Hello welcome first file is shit and second file in resultUtil
+Hello welcome to promises, first file is shit and second file in resultUtil
