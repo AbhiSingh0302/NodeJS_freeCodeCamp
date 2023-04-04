@@ -1,5 +1,10 @@
-const _ = require('lodash');
+const http = require('http');
 
-const arr = [1,[2,[3,[4,[5,[6]]]]]];
-const newArr = _.flattenDeep(arr);
-console.log(newArr);
+const server = http.createServer((req,res,next) => {
+    console.log('request event');
+    res.end('Hello world!!');
+})
+
+server.listen(3000,()=>{
+    console.log('Server is listening on port 3000...');
+})
